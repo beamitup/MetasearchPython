@@ -1,0 +1,21 @@
+import webbrowser
+
+def open_google(query):
+    url = f"https://www.google.com/search?q={query}"
+    webbrowser.open_new_tab(url)
+
+def open_bing(query):
+    url = f"https://www.bing.com/search?q={query}"
+    webbrowser.open_new_tab(url)
+
+def open_duckduckgo(query):
+    url = f"https://duckduckgo.com/?q={query}"
+    webbrowser.open_new_tab(url)
+
+def metasearch(query):
+    open_google(query)
+    open_bing(query)
+    open_duckduckgo(query)
+
+query = input("Enter your search query: ")
+metasearch(query)
