@@ -4,6 +4,14 @@ def open_google(query):
     url = f"https://www.google.com/search?q={query}"
     webbrowser.open_new_tab(url)
 
+def open_yandex(query):
+    url = f"https://yandex.com/search/?text={query}"
+    webbrowser.open_new_tab(url)
+
+def open_baidu(query):
+    url = f"https://www.baidu.com/s?&wd={query}"
+    webbrowser.open_new_tab(url)
+
 def open_bing(query):
     url = f"https://www.bing.com/search?q={query}"
     webbrowser.open_new_tab(url)
